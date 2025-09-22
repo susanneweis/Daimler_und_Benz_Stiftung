@@ -10,7 +10,8 @@
 \usepackage{hyperref}
 \usepackage{mathptmx} 
 \usepackage{csquotes}
-\usepackage[backend=biber,style=apa]{biblatex}
+%\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage[backend=biber,style=numeric]{biblatex}
 \renewcommand*{\bibfont}{\small}  % Schriftgröße der Referenzen
 \usepackage{soul} % us hl to highlight
 \usepackage{xcolor} % Optional, falls du die Farbe ändern willst
@@ -24,6 +25,12 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage[table]{xcolor}
+\usepackage{graphicx}   % wichtig fürs Einfügen von Bildern
+\usepackage{caption}    % erlaubt auch unnummerierte Captions (optional)
+\usepackage{wrapfig}   % Text um Bilder herum
+\captionsetup[figure]{name=Fig.}
+\captionsetup[figure]{aboveskip=1pt, belowskip=-2ex}
+\captionsetup[figure]{font={scriptsize,it}}
 
 % Vor der Tabelle:
 \renewcommand{\arraystretch}{1.2}
@@ -37,63 +44,155 @@
 
 \sethlcolor{yellow} % Setzt die Highlight-Farbe
 \setlist[itemize]{leftmargin=*, topsep=-3pt, itemsep=0pt}
-\setstretch{1.3}
+\setstretch{1}
 
-\addbibresource{/Users/sweis/Data/Arbeit/Bibliothek/MasterBib_LaTex/MasterBib_LaTex.bib}
+\addbibresource{/Users/sweis/Data/Arbeit/Bibliothek/MasterBib_LaTex.bib}
 
 \begin{document}
 
-\noindent
-\section*{\Large\textbf{Dynamic Cognition: \\Using Movies to unravel Sex and Gender differences in the Brain in Action}}
-\hfill
+\hl{Name, institution, and contact details of the applicant (one person only) and a list of the scientists or institutions involved in the research project (max. 2 A4 pages)
+CVs and lists of publications need not be submitted.}
 
-\section*{Ansprechpartnerin}
-Susanne Weis, Heinrich Heine University Düsseldorf; \\
+PD Dr. rer. medic. Susanne Weis, Heinrich Heine University Düsseldorf; \\
 Gruppenleiterin „Variabilität des Gehirns“, Gehirn und Verhalten (INM-7), Institut für Neurowissenschaften und Medizin,  
 Forschungszentrum Jülich; \\
-Heilpraktikerin für Psychotherapie; \\
 E-Mail: S.Weis@fz-juelich.de
 
-\section*{Kurzzusammenfassung} 
-Das zentrales Ziel des Projekts ist es, wissenschaftlich fundiertes Wissen über geschlechtsspezifische Unterschiede in Kognition, 
-Emotion, Erleben und Verhalten in die psychische Gesundheitsversorgung zu integrieren und so dazu beizutragen, dass die unterschiedlichen 
-Bedürfnisse von Frauen und Männern in Diagnostik und Therapie systematisch berücksichtigt werden.\\
-Aktuelle wissenschaftliche Erkenntnisse belegen ausgeprägte Geschlechtsunterschiede in der strukturellen und funktionellen
-Organisation des Gehirns. Diese Unterschiede spiegeln sich in kognitiven Prozessen und Verhaltensweisen wider, insbesondere im 
-Erleben von und im Umgang mit Emotionen, welche eine wichtige Rolle im Bereich der psychischen Gesundheit spielen.
-Vor diesem Hintergrund sind signifikante Geschlechtsunterschiede in der Prävalenz psychischer Erkrankungen nicht überraschend. 
-So erkranken Frauen häufiger an Depressionen, Angststörungen und Essstörungen, während Männer häufiger von 
-Suchterkrankungen, Aufmerksamkeits-defizit- / Hyperaktivitätsstörungen (ADHS) und externalisierenden 
-Störungen betroffen sind.\\ 
-Die für die Diagnostik und Therapie psychiatrischer Erkrankungen wichtigen Geschlechtsunterschiede beruhen jedoch 
-nicht nur auf biologisch begründeten neuropsychologischen Unterschieden, sondern auch auf sozial erlernten Geschlechterrollen und gesellschaftlichen Erwartungen. Männer stehen häufig
-unter dem Druck, Stärke und Kontrolle zeigen zu müssen, was zur Unterdrückung emotionaler Symptome und einer geringeren Inanspruchnahme 
-psychotherapeutischer Hilfe führt. Frauen hingegen werden emotionales Verhalten und Vulnerabilität gesellschaftlich eher zugeschrieben, 
-wodurch ihre Symptome schneller als behandlungsbedürftig erkannt werden. Gleichzeitig besteht jedoch die Gefahr der Überpathologisierung. 
-Geschlechtsspezifische Normen beeinflussen das Selbstbild, die Wahrnehmung von Symptomen sowie die 
-therapeutische Beziehung. Sie müssen daher zwingend in eine differenzierte, geschlechtersensible Diagnostik und 
-Behandlung einbezogen werden.\\
-Somit liegt der Fokus des hier vorgeschlagenen Projektes auf der Vermittlung neurowissenschaftlicher Erkenntnisse über 
-Geschlechtsunterschiede in Gehirn und Verhalten an betroffene Patient:innen und deren Angehörige, sowie an Therapeut:innen 
-mit dem Ziel, die Relevanz dieser Unterschiede für psychische Erkrankungen und deren Behandlung in den Fokus der 
-Aufmerksamkeit aller Beteiligen zu bringen.\\
-Wir wollen das Bewusstsein für geschlechtsbezogene Einflussfaktoren in Psychotherapie und Beratung 
-schärfen und die psychische Gesundheitskompetenz in der Bevölkerung stärken. Das Projekt versteht sich somit als Brücke zwischen 
-neurowissenschaftlicher Forschung und psychotherapeutischer Praxis. Es leistet damit einen konkreten Beitrag zu einer 
-individualisierten und gerechten psychischen Gesundheitsversorgung, in der Geschlecht nicht als Randaspekt, 
-sondern als integrativer Bestandteil von Diagnostik und Therapie verstanden wird.\\
-Durch eine verständliche, praxisnahe und zugängliche Vermittlung wissenschaftlicher Erkenntnisse 
-zu Geschlechtsunterschieden in Gehirn, Verhalten und Erleben wird ein differenziertes Verständnis 
-psychischer Erkrankungen gefördert - jenseits von pseudowissenschaftlichen Stereotypen.
-So entsteht Raum für eine zukunftsorientierte Psychotherapie, die neurobiologische, psychologische und 
-gesellschaftliche Perspektiven miteinander verbindet und den Menschen in seiner ganzen Vielfalt in den 
-Mittelpunkt stellt.
+Simon
 
-\section*{Ausführliche Vorhabensbeschreibung}
+INM-7: The proposed work is embedded in a multidisciplinary working team combining knowledge in the field of neuropsychology, structural and functional MRI analysis, computational neuroscience and machine learning. 
 
-\subsection*{Thema und Idee}
+Dr. Kaustubh Patil, head of the working group “Applied Machine Learning”
 
-Psychische Erkrankungen zeigen ausgeprägte Geschlechtsunterschiede in Prävalenz, Alter bei Erkrankung und Symptombild. 
-Frauen sind häufiger von Depressionen, Angst- und Essstörungen betroffen, Männer von ADHS, Autismus-Spektrum- und 
+Rick Betzel is an associate professor at the Psychological and Brain Sciences Department of Psychological and Brain Sciences at Indiana University Bloomington, USA. He is an expert in principles of time-varying functional network reconfiguration and its relationship to ongoing cognitive processes and one of the developers of the edge time series approach which we will employ within the project suggested here. 
+
+
+\newpage
+
+\section*{\Large\textbf{Dynamic Cognition: Movies as a Window into Sex Differences in the Brain}}
+\hfill
+
+\subsection*{Project Description} 
+\subsection*{Background and Research Question} 
+
+Functional brain imaging techniques, in particular fMRI have been widely used to investigate sex differences in the brain.
+Such differences in structural and functional brain organization play a crucial role in healthy human brain development, 
+aging, as well as the manifestation of psychiatric and neurological disorders \parencite{cahillWhySexMatters2006, gobinathSexHormonesGenotype2017}. 
+Consequently, an understanding of sex differences in the human brain and 
+their underlying mechanisms is critical for understanding both normative behavior and psychopathology. \\
+In the present proposal, we aim to employ novel brain imaging methodology utilizing naturalistic viewing (NV), 
+i.e. watching of Hollywood movies clips in the scanner, to broaden our knowledge of sex differences in the brain. 
+While it is common knowledge that women and men often react differently to complex scenarios in 
+films - think of how a couple might debate a movie's emotional impact after leaving the cinema - our study 
+delves deeper than these everyday observations. Instead of relying on stereotypes such as 
+'women like emotional scenes, men like action', we will analyze in detail how brain activity and functional 
+connectivity (FC) differs when women and men watch various movie scenes. This could reveal, for example, 
+that women process subtle social cues in dialogues differently from men, while men might react more strongly to 
+visual hints in action scenes that foreshadow danger. Through a thorough analysis of females' and males' brain 
+responses to a variety of different movie scenes, we aim to develop a well-founded understanding of cognitive 
+sex differences that goes beyond what we think we know from everyday life.\\
+So far, our understanding of sex differences in the brain is still far from complete. 
+While there is some agreement on the existence of sex differences in specific cognitive domains like 
+language and spatial processing, some researchers argue that female and male brains are altogether more similar 
+than different \parencite{joelSexGenitaliaHuman2015} and that the overlap between the sexes is larger than their differences. 
+Importantly, neuroimaging research on sex difference has so far only been able to capture certain aspects of these 
+differences.\\ 
+Classically, sex differences in the brain have been studied using task-based (TB) fMRI with tightly 
+controlled tasks, offering insights limited to specific cognitive domains 
+(e.g. (Thimm, et al. 2014; Weis, et al. 2011; Weis, et al. 2008)). However, due to the highly 
+controlled and artificial nature of the tasks, ecological validity of task-related fMRI is usually 
+very low and does not reflect cognitive sex differences as observed in daily life. More recently, 
+resting state (RS) approaches have been employed, in which fMRI data is acquired while subjects relax 
+in the scanner without any specific task demand or visual or auditory stimulation. Earlier
+RS studies examined group differences in connectivity patterns between women and men. 
+\begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
+  \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
+  \includegraphics[width=\linewidth]{sex_classification.png}
+  \caption{ROI-based sex classification shows high accuracies for (a) within sample CV and (b) across sample classification.}
+  \label{fig:sexclass}
+\end{wrapfigure}
+More recently, however, machine learning (ML) methods have been applied to move beyond group averages: sex classification approaches 
+use RS data to predict the sex of individual subjects and then infer which brain networks contribute most to 
+distinguishing females from males. Using such an ML approach, we identified regionally specific brain networks 
+that support successful classification, which, importantly, generalized from a training sample to an independent 
+sample and revealed that predictive power—and thus cognitive sex differences—are most pronounced in higher-level 
+cognitive regions involved in language, social cognition, and emotion processing 
+(Weis, et al. 2020; Wiersch, et al. 2024; Wiersch, et al. 2023).
+\par\vspace{-1\parskip}\noindent
+Importantly though, RS fMRI only reflects the brain in a specific state, which has commonly interpreted as 
+intrinsic brain organization and thus constitutes a trait rather than a state. Moreover, while a state of free mind wandering happens often in real life, what remains largely unexplored are sex differences in the “brain in action”, i.e. when encountering complex, multimodal stimulation resembling real-life experiences.
+The present proposal aims to contribute to closing this gap in knowledge by applying the newly 
+emerging NV approach to examine sex-specific brain responses in ecologically valid contexts. NV focuses on 
+cognitive processes in dynamic, temporally extended, naturalistic contexts, which are much more akin to
+situations which the brain must deal with in real life. In NV tasks, participants in the scanner are 
+presented with naturalistic material like movies. For the participants, there is no other task demand rather 
+than watching the clips. NV offers an engaging task for the subject and thus avoids boredom in the scanner. 
+Importantly, as opposed to RS, all participants are exposed to the same stimulus, for which content and timing 
+is known and can be used in the analyses. NV approaches offer complex, dynamic and ongoing stimulation similar 
+to experiences in everyday situations, where low-level (audiovisual) and high-level (cognitive and emotional) 
+content vary fluidly, creating a multimodal and immersive experience (Sonkusare, et al. 2019), offering the 
+opportunity to capture dynamic neural processing in ecologically valid contexts  (Vanderwal, et al. 2019). 
+Furthermore, NV has been shown to improve reliability and individual identifiability over RS (Kröll, et al. 2024) 
+with a recent study from our lab (Kroll, et al. 2023) showing that the use of NV enhances the detection of 
+FC patterns that are unique at the individual level.\\ 
+Our lab pioneered NV analysis methods. We recently developed the topography-based predictive framework 
+(TOPF) (Li, et al. 2023), which identifies individual-specific evoked activity topographies in a data-driven 
+manner and examines their behavioural relevance using a ML predictive framework. 
+TOPF effectively and stably captures individual differences in evoked brain activity and successfully predicts phenotypes across 
+cognition, emotion and personality, and will be employed in the present context to uncover differences between 
+females and males. In preliminary work using TOPF (Li, et al. 2023) on NV data, we 
+\begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
+  \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
+  \includegraphics[width=\linewidth]{topf_neu.png}
+  \caption{TOPF captures individual differ-ences in brain activity and successfully predicts phenotypes across cognition, emotion and personality.}
+  \label{fig:topf}
+\end{wrapfigure}
+achieved up to 80\% accuracy in sex classification on single movie clips. Highly predictive regions were 
+linked to emotion, language, and higher cognition. These promising findings await further validation over 
+the course of the present project. Altogether, NV offers rich, time-evolving stimulation, allowing for the 
+study of dynamic brain states across diverse scenarios. This method better reflects everyday cognitive and 
+emotional challenges and may uncover novel sex differences in functional brain organization.
+\par\vspace{-1\parskip}\noindent
+Surprisingly, to our knowledge, no study has yet used NV to systematically examine sex differences. 
+In a previous publication (Eickhoff, et al. 2020), we have compared the potential of movies for the study of 
+individual brain differences to what running on a treadmill is to the heart during a cardiac stress-test, 
+i.e. to potentially provide a standardized way to study the whole organ while it works to compare function 
+across different levels of intensity and demands. In the present context, this means that NV can be expected 
+to reveal sex differences in the brain that so far have been unobservable, since NV data encompass an extensive 
+range of dynamic real-life situations, such as social interactions, recognition of faces or perception of 
+emotions (Sonkusare, et al. 2019). While isolated cognitive processes as examined in TB fMRI might not reveal 
+significant sex differences, the complex interplay of these processes - as engaged during movie watching - could 
+highlight more pronounced differences between women and men. This underscores the value of using naturalistic stimuli 
+to uncover subtle but meaningful variations in neural processing that might be missed in more controlled, simplified 
+experimental paradigms. Using careful annotations of the movies, it is also possible to identify which features 
+of a given scene are particularly relevant to evoking sex differences in complex experiences and to identify 
+brain networks that differ most between females and males during these experiences.\\
+We aim to employ novel methodology utilizing NV paradigms to expand our understanding of sex differences in the 
+brain. This approach has the potential to elucidate sex-specific neural mechanisms in response to the complex and 
+dynamic content of movies and to reveal nuanced sex-specific distinctions in brain function that may not be apparent 
+in more constrained experimental paradigms or everyday observations. Our methodology leverages the ecological 
+validity of movie stimuli to probe complex, multimodal cognitive processes in a controlled yet naturalistic setting. 
+Through advanced neuroimaging techniques and sophisticated data analysis methods, we anticipate uncovering 
+subtle yet significant sex-based variations in neural activity and FC that can inform our understanding of 
+broader cognitive and behavioural differences between females and males. To this aim, we will first consider 
+temporally aggregated FC evoked by movies over the duration of several minutes. Subsequently, we will further 
+disentangle which specific events evoke sex differences and examine differences in the brain networks caused by 
+such events. Furthermore, we will examine how the brain’s response to the evolving narrative of the movies differs 
+between the sexes. The project's comprehensive approach of examining temporally aggregated as well as time resolved FC, 
+network dynamics and brain activity patterns provides a multi-faceted view of sex differences in the brain and, 
+which can have implications for understanding sex differences in cognition, behaviour, and susceptibility to certain 
+neurological and psychiatric conditions.\\
+Results from the proposed project have the potential to add a crucial new dimension to current knowledge on 
+cognitive sex differences. Psychologically, these insights deepen our understanding of normative sex differences; 
+clinically, they may help clarify why certain psychiatric and neurological disorders manifest differently in women 
+and men. Such knowledge can potentially enhance diagnostic accuracy, inform personalized treatments, and support the 
+development of sex-specific healthcare and education strategies.\\
+Throughout the proposal, for ease of reading, the term “sex” will refer to the self-reported (biological) sex and 
+appearance of the participants. At the same time, we fully acknowledge that “gender identity”, i.e. the 
+subjective identification of an individual as female, male, or one of the other gender identities which might 
+be also fluid, also play important roles, which however, are beyond the scope of the present project. 
+
+
+\printbibliography
 
 \end{document}
