@@ -90,7 +90,8 @@ connectivity (FC) differs when women and men watch various movie scenes. This co
 that women process subtle social cues in dialogues differently from men, while men might react more strongly to 
 visual hints in action scenes that foreshadow danger. Through a thorough analysis of females' and males' brain 
 responses to a variety of different movie scenes, we aim to develop a well-founded understanding of cognitive 
-sex differences that goes beyond what we think we know from everyday life.\\
+sex differences that advances our knowledge of sex differences in brain function beyond 
+the current state of research.\\
 So far, our understanding of sex differences in the brain is still far from complete. 
 While there is some agreement on the existence of sex differences in specific cognitive domains like 
 language and spatial processing, some researchers argue that female and male brains are altogether more similar 
@@ -99,25 +100,27 @@ Importantly, neuroimaging research on sex difference has so far only been able t
 differences.\\ 
 Classically, sex differences in the brain have been studied using task-based (TB) fMRI with tightly 
 controlled tasks, offering insights limited to specific cognitive domains 
-(e.g. (Thimm, et al. 2014; Weis, et al. 2011; Weis, et al. 2008)). However, due to the highly 
+(e.g. \parencite{thimmMenstrualCycleEffects2014a,weisDynamicChangesFunctional2011,weisEstradiolModulatesFunctional2008}. 
+However, due to the highly 
 controlled and artificial nature of the tasks, ecological validity of task-related fMRI is usually 
 very low and does not reflect cognitive sex differences as observed in daily life. More recently, 
 resting state (RS) approaches have been employed, in which fMRI data is acquired while subjects relax 
 in the scanner without any specific task demand or visual or auditory stimulation. Earlier
 RS studies examined group differences in connectivity patterns between women and men. 
+More recently, however, machine learning (ML) methods have been applied to move beyond group averages: sex classification approaches 
+use RS data to predict the sex of individual subjects 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
   \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
   \includegraphics[width=\linewidth]{sex_classification.png}
   \caption{ROI-based sex classification shows high accuracies for (a) within sample CV and (b) across sample classification.}
   \label{fig:sexclass}
 \end{wrapfigure}
-More recently, however, machine learning (ML) methods have been applied to move beyond group averages: sex classification approaches 
-use RS data to predict the sex of individual subjects and then infer which brain networks contribute most to 
+and then infer which brain networks contribute most to 
 distinguishing females from males. Using such an ML approach, we identified regionally specific brain networks 
 that support successful classification, which, importantly, generalized from a training sample to an independent 
 sample and revealed that predictive power—and thus cognitive sex differences—are most pronounced in higher-level 
 cognitive regions involved in language, social cognition, and emotion processing 
-(Weis, et al. 2020; Wiersch, et al. 2024; Wiersch, et al. 2023).
+\parencite{weisSexClassificationResting2020a,wierschAccurateSexPrediction2023a,wierschSexDifferencesBrain2021a}.
 \par\vspace{-1\parskip}\noindent
 Importantly though, RS fMRI only reflects the brain in a specific state, which has commonly interpreted as 
 intrinsic brain organization and thus constitutes a trait rather than a state. Moreover, while a state of free mind wandering happens often in real life, what remains largely unexplored are sex differences in the “brain in action”, i.e. when encountering complex, multimodal stimulation resembling real-life experiences.
@@ -133,14 +136,14 @@ to experiences in everyday situations, where low-level (audiovisual) and high-le
 content vary fluidly, creating a multimodal and immersive experience \parencite{sonkusareNaturalisticStimuliNeuroscience2019}, offering the 
 opportunity to capture dynamic neural processing in ecologically valid contexts \parencite{vanderwalMoviesMagnetNaturalistic2019}. 
 Furthermore, NV has been shown to improve reliability and individual identifiability over RS \parencite{krollNaturalisticViewingIncreases2023} 
-with a recent study from our lab (Kroll, et al. 2023) showing that the use of NV enhances the detection of 
+with a recent study from our lab \parencite{krollNaturalisticViewingIncreases2023} showing that the use of NV enhances the detection of 
 FC patterns that are unique at the individual level.\\ 
 Our lab pioneered NV analysis methods. We recently developed the topography-based predictive framework 
-(TOPF) (Li, et al. 2023), which identifies individual-specific evoked activity topographies in a data-driven 
+(TOPF) \parencite{liTopographybasedPredictiveFramework2023a}, which identifies individual-specific evoked activity topographies in a data-driven 
 manner and examines their behavioural relevance using a ML predictive framework. 
 TOPF effectively and stably captures individual differences in evoked brain activity and successfully predicts phenotypes across 
 cognition, emotion and personality, and will be employed in the present context to uncover differences between 
-females and males. In preliminary work using TOPF (Li, et al. 2023) on NV data, we 
+females and males. In preliminary work using TOPF \parencite{liTopographybasedPredictiveFramework2023a} on NV data, we 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
   \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
   \includegraphics[width=\linewidth]{topf_neu.png}
@@ -160,7 +163,7 @@ i.e. to potentially provide a standardized way to study the whole organ while it
 across different levels of intensity and demands. In the present context, this means that NV can be expected 
 to reveal sex differences in the brain that so far have been unobservable, since NV data encompass an extensive 
 range of dynamic real-life situations, such as social interactions, recognition of faces or perception of 
-emotions (Sonkusare, et al. 2019). While isolated cognitive processes as examined in TB fMRI might not reveal 
+emotions \parencite{sonkusareNaturalisticStimuliNeuroscience2019}. While isolated cognitive processes as examined in TB fMRI might not reveal 
 significant sex differences, the complex interplay of these processes - as engaged during movie watching - could 
 highlight more pronounced differences between women and men. This underscores the value of using naturalistic stimuli 
 to uncover subtle but meaningful variations in neural processing that might be missed in more controlled, simplified 
@@ -192,6 +195,43 @@ appearance of the participants. At the same time, we fully acknowledge that “g
 subjective identification of an individual as female, male, or one of the other gender identities which might 
 be also fluid, also play important roles, which however, are beyond the scope of the present project. 
 
+\subsection*{Data: The Ju-MOVIES dataset}
+The work proposed here will be based on a data set that has already been acquired and is ideally suited for 
+the examination of sex differences through a NV approach. Over the course of the project, further data will be collected.
+The paradigm comprises seven movie clips of about 8 - 10 minutes length, which are all excerpts from Hollywood movies 
+(“Dirty Dancing”, “Scream”, “Dead Poets Society”, “Forrest Gump”, “Dead Man Walking”, “Life is Beautiful”, 
+“The Good, the Bad, the Ugly”). The specific movie stimuli were chosen to cover a variety of social interactions 
+and complex situations as well as multifaceted emotions evolving over the course of the movie to match 
+the complex nature of real-life experiences. Considering that viewers lack the context of the entire movie, 
+each stimulus was chosen to be long enough for the viewers to understand the situation, empathize with characters and 
+follow the evolving narrative. Additionally, participants watch a compilation of 12 short movie clips (“Short Sequences”),
+which were again taken from Hollywood movies and completed two RS scans of about 9 minutes length with their eyes open. \\
+So far, we collected data of 135 healthy participants (68 males, age 18 - 35 years, mean age = 24.33 years). 
+All fMRI data are acquired on a Siemens 3T Prisma scanning (Siemens, Erlangen, Germany) with a 64-channel head coil 
+at the Imaging Core Facility of Research Centre Jülich, using a T2w multiband echo planar imaging sequence with the 
+following parameters: repetition time (TR) = 980ms, echo time (TE) = 30ms, flip angle = 70°, field of view 
+(FOV) = 207 x 207mm, voxel size=2.2 x 2.2 x 2.0mm3, number of slices: 64, multiband acceleration factor=4, 
+phase encoding direction=AP,  FoV=207mm). A mirror fixed on the head coil allows participants to see a screen used 
+to display the movies. In-ear headphones are used for ear protection and to deliver the movie sound. 
+Additionally, a structural T1w image is acquired using an MP-RAGE sequence (TR=2000ms, TE=2.45ms, TI=900ms, 
+flip angle=8°, FoV: 256mm) yielding 1mm3 voxels.\\
+Saliva samples are collected from each participant and levels of cortisol, oestradiol, progesterone, and testosterone 
+are analysed by a specialized laboratory. Control for fluctuating hormone levels is essential for a meaningfully 
+interpretation of potential sex differences in functional brain. Furthermore, data OC intake is noted for 
+female participants.\\ 
+To characterize the movie stimuli in more detail, emotions perceived by viewers of the movies were assessed by 
+44 German participants (23 males, age 20-30 years, mean age 25.05 years) who watched all movie stimuli 
+while simultaneously rating six basic emotions 
+(happiness, fear, surprise, sadness, disgust and anger \parencite{ekmanConstantsCulturesFace1971a}). 
+Rating were collected by the ReMoTa toolbox (Real-time Movie Tagging v0.0; \parencite{lettieriEmotionotopyHumanRight2019a}). 
+Participants watched the movies on a laptop and rated their feelings by use of the keyboard. 
+All emotions were rated simultaneously on a scale from 0 to 100 at a sampling rate of 10hz. 
+The emotion ratings confirmed the multifaceted and diverse emotions elicited by the 
+different movie stimuli. In a further annotation, two independent raters quantified the following 
+features: faces, bodies, male / female presenting characters, ethnicity of characters, presence of children, 
+adults, crowds, hands, buildings, vehicles, food, landscapes, animals, plants, movement, social interactions, 
+place (inside or outside / urban vs. non-urban), time of day (day or night), weather, presence of music and 
+camera movements.
 
 \printbibliography
 
