@@ -75,195 +75,158 @@ Rick Betzel is an associate professor at the Psychological and Brain Sciences De
 \subsection*{Project Description} 
 \subsection*{Background and Research Question} 
 
-Functional brain imaging techniques, in particular fMRI have been widely used to investigate sex differences in the brain.
-Such differences in structural and functional brain organization play a crucial role in healthy human brain development, 
-aging, as well as the manifestation of psychiatric and neurological disorders \parencite{cahillWhySexMatters2006a,gobinathSexHormonesGenotype2017a}. 
-Consequently, an understanding of sex differences in the human brain and 
-their underlying mechanisms is critical for understanding both normative behavior and psychopathology. \\
-In the present proposal, we aim to employ novel brain imaging methodology utilizing naturalistic viewing (NV), 
-i.e. watching of Hollywood movies clips in the scanner, to broaden our knowledge of sex differences in the brain. 
-While it is common knowledge that women and men often react differently to complex scenarios in 
-films - think of how a couple might debate a movie's emotional impact after leaving the cinema - our study 
-delves deeper than these everyday observations. Instead of relying on stereotypes such as 
-'women like emotional scenes, men like action', we will analyze in detail how brain activity and functional 
-connectivity (FC) differs when women and men watch various movie scenes. This could reveal, for example, 
-that women process subtle social cues in dialogues differently from men, while men might react more strongly to 
-visual hints in action scenes that foreshadow danger. Through a thorough analysis of females' and males' brain 
-responses to a variety of different movie scenes, we aim to develop a well-founded understanding of cognitive 
-sex differences that advances our knowledge of sex differences in brain function beyond 
-the current state of research.\\
-So far, our understanding of sex differences in the brain is still far from complete. 
-While there is some agreement on the existence of sex differences in specific cognitive domains like 
-language and spatial processing, some researchers argue that female and male brains are altogether more similar 
-than different \parencite{joelSexGenitaliaHuman2015a} and that the overlap between the sexes is larger than their differences. 
-Importantly, neuroimaging research on sex difference has so far only been able to capture certain aspects of these 
-differences.\\ 
-Classically, sex differences in the brain have been studied using task-based (TB) fMRI with tightly 
-controlled tasks, offering insights limited to specific cognitive domains 
-(e.g. \parencite{thimmMenstrualCycleEffects2014a,weisDynamicChangesFunctional2011,weisEstradiolModulatesFunctional2008}. 
-However, due to the highly 
-controlled and artificial nature of the tasks, ecological validity of task-related fMRI is usually 
-very low and does not reflect cognitive sex differences as observed in daily life. More recently, 
-resting state (RS) approaches have been employed, in which fMRI data is acquired while subjects relax 
-in the scanner without any specific task demand or visual or auditory stimulation. Earlier
-RS studies examined group differences in connectivity patterns between women and men. 
-More recently, however, machine learning (ML) methods have been applied to move beyond group averages: sex classification approaches 
-use RS data to predict the sex of individual subjects 
+Functional brain imaging, especially fMRI, has been widely used to investigate sex differences in the brain. 
+Such differences in structural and functional organization are crucial for understanding healthy development, 
+aging, and the manifestation of psychiatric and neurological disorders \parencite{cahillWhySexMatters2006a,gobinathSexHormonesGenotype2017a}. 
+Thus, a deeper understanding of sex differences in the brain and their underlying mechanisms is essential 
+for understanding both healthy behavior and psychopathology.\\
+In this proposal, we employ novel brain imaging methodology utilizing naturalistic viewing (NV), i.e. watching movie 
+clips in the scanner, to broaden knowledge of sex differences in brain function. While it is common knowledge 
+that women and men often react differently to films, our study moves beyond stereotypes (“women prefer emotions, 
+men prefer action”) to examine in detail how brain activity and functional connectivity (FC) differ when 
+viewing diverse scenes. For example, women may process subtle social cues in dialogue differently, whereas 
+men may respond more strongly to visual foreshadowing of danger. By systematically analyzing such responses, 
+we aim to advance understanding of cognitive sex differences beyond the current state of research.\\
+Despite decades of work, our knowledge of sex differences in the brain remains incomplete. Some consensus exists 
+for cognitive domains such as language or spatial processing, yet others argue that male and female brains are more 
+alike than different \parencite{joelSexGenitaliaHuman2015a}.\\
+Classical studies used task-based (TB) fMRI, yielding domain-specific but low-ecological insights 
+\parencite{thimmMenstrualCycleEffects2014a,weisDynamicChangesFunctional2011,weisEstradiolModulatesFunctional2008}. 
+However, due to the highly controlled and artificial nature of the tasks, ecological validity of task-related fMRI is usually 
+very low and does not reflect cognitive sex differences as observed in daily life
+More recently, resting-state (RS) fMRI has been applied, in which fMRI data is acquired while subjects relax 
+in the scanner without any specific task demand or visual or auditory stimulation.
+Earlier RS studies examined group differences in FC patterns between women and men. 
+More recently, machine learning (ML) methods have been applied to move beyond group averages: 
+sex classification approaches use RS data to predict the sex of individual subjects 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
   \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
   \includegraphics[width=\linewidth]{sex_classification.png}
   \caption{ROI-based sex classification shows high accuracies for (a) within sample CV and (b) across sample classification.}
   \label{fig:sexclass}
 \end{wrapfigure}
-and then infer which brain networks contribute most to 
-distinguishing females from males. Using such an ML approach, we identified regionally specific brain networks 
-that support successful classification, which, importantly, generalized from a training sample to an independent 
-sample and revealed that predictive power—and thus cognitive sex differences—are most pronounced in higher-level 
-cognitive regions involved in language, social cognition, and emotion processing 
+and then infer which brain networks contribute most to distinguishing females from males.
+\par\vspace{-1\parskip}\noindent
+Our own ML work identified regionally specific networks with predictive power strongest in higher-level regions 
+for language, social cognition, and emotion processing 
 \parencite{weisSexClassificationResting2020a,wierschAccurateSexPrediction2023a,wierschSexDifferencesBrain2021a}.
-\par\vspace{-1\parskip}\noindent
-Importantly though, RS fMRI only reflects the brain in a specific state, which has commonly interpreted as 
-intrinsic brain organization and thus constitutes a trait rather than a state. Moreover, while a state of free mind wandering happens often in real life, what remains largely unexplored are sex differences in the “brain in action”, i.e. when encountering complex, multimodal stimulation resembling real-life experiences.
+However, RS primarily reflects intrinsic, trait-like brain organization. \\
+What remains largely unexplored are 
+sex differences in the “brain in action” when engaging with complex, multimodal input resembling real life. 
 The present proposal aims to contribute to closing this gap in knowledge by applying the newly 
-emerging NV approach to examine sex-specific brain responses in ecologically valid contexts. NV focuses on 
+emerging NV approach to examine sex-specific brain responses in ecologically valid contexts. 
+NV focuses on 
 cognitive processes in dynamic, temporally extended, naturalistic contexts, which are much more akin to
-situations which the brain must deal with in real life. In NV tasks, participants in the scanner are 
-presented with naturalistic material like movies. For the participants, there is no other task demand rather 
-than watching the clips. NV offers an engaging task for the subject and thus avoids boredom in the scanner. 
+situations which the brain must deal with in real life.
 Importantly, as opposed to RS, all participants are exposed to the same stimulus, for which content and timing 
-is known and can be used in the analyses. NV approaches offer complex, dynamic and ongoing stimulation similar 
+is known and can be used in the analyses.
+NV approaches offer complex, dynamic and ongoing stimulation similar 
 to experiences in everyday situations, where low-level (audiovisual) and high-level (cognitive and emotional) 
-content vary fluidly, creating a multimodal and immersive experience \parencite{sonkusareNaturalisticStimuliNeuroscience2019}, offering the 
-opportunity to capture dynamic neural processing in ecologically valid contexts \parencite{vanderwalMoviesMagnetNaturalistic2019}. 
-Furthermore, NV has been shown to improve reliability and individual identifiability over RS \parencite{krollNaturalisticViewingIncreases2023} 
-with a recent study from our lab \parencite{krollNaturalisticViewingIncreases2023} showing that the use of NV enhances the detection of 
-FC patterns that are unique at the individual level.\\ 
-Our lab pioneered NV analysis methods. We recently developed the topography-based predictive framework 
-(TOPF) \parencite{liTopographybasedPredictiveFramework2023a}, which identifies individual-specific evoked activity topographies in a data-driven 
-manner and examines their behavioral relevance using a ML predictive framework. 
-TOPF effectively and stably captures individual differences in evoked brain activity and successfully predicts phenotypes across 
-cognition, emotion and personality, and will be employed in the present context to uncover differences between 
-females and males. In preliminary work using TOPF \parencite{liTopographybasedPredictiveFramework2023a} on NV data, we 
-\begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
-  \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
-  \includegraphics[width=\linewidth]{topf_neu.png}
-  \caption{TOPF captures individual differences in brain activity and successfully predicts phenotypes across cognition, emotion and personality.}
-  \label{fig:topf}
-\end{wrapfigure}
-achieved up to 80\% accuracy in sex classification on single movie clips. Highly predictive regions were 
-linked to emotion, language, and higher cognition. These promising findings await further validation over 
-the course of the present project. Altogether, NV offers rich, time-evolving stimulation, allowing for the 
-study of dynamic brain states across diverse scenarios. This method better reflects everyday cognitive and 
-emotional challenges and may uncover novel sex differences in functional brain organization.
-\par\vspace{-1\parskip}\noindent
+content vary fluidly, creating a multimodal and immersive experience 
+\parencite{sonkusareNaturalisticStimuliNeuroscience2019}, offering the 
+opportunity to capture dynamic neural processing in ecologically valid contexts 
+\parencite{vanderwalMoviesMagnetNaturalistic2019} and has been shown to enhance reliability and 
+identifiability compared to RS \parencite{krollNaturalisticViewingIncreases2023}.\\
+Our lab has pioneered NV analyses. We developed the Topography-based Predictive Framework (TOPF) 
+\parencite{liTopographybasedPredictiveFramework2023a}, which extracts individual-specific evoked 
+topographies and links them to behavior using ML. 
+Applied to NV data, TOPF achieved up to 80\% accuracy in 
+sex classification, with predictive regions tied to emotion, language, and higher cognition. 
+These promising results highlight the potential of NV to uncover novel sex differences.\\
 Surprisingly, to our knowledge, no study has yet used NV to systematically examine sex differences. 
-In a previous publication \parencite{eickhoffClinicalApplicationsMovie2020a}, we have compared the potential of movies for the study of 
-individual brain differences to what running on a treadmill is to the heart during a cardiac stress-test, 
+In a previous publication \parencite{eickhoffClinicalApplicationsMovie2020a}, we have compared the potential of 
+movies for the study of 
+individual brain differences to a cardiac stress-test, 
 i.e. to potentially provide a standardized way to study the whole organ while it works to compare function 
-across different levels of intensity and demands. In the present context, this means that NV can be expected 
-to reveal sex differences in the brain that so far have been unobservable, since NV data encompass an extensive 
-range of dynamic real-life situations, such as social interactions, recognition of faces or perception of 
-emotions \parencite{sonkusareNaturalisticStimuliNeuroscience2019}. While isolated cognitive processes as examined in TB fMRI might not reveal 
+across different levels of intensity and demands. 
+We therefore expect NV to expose sex differences across a wide range of real-life-like situations—social interactions, 
+face and emotion perception \parencite{sonkusareNaturalisticStimuliNeuroscience2019}, 
+or complex narratives—that TB or RS approaches cannot capture. 
+While isolated cognitive processes as examined in TB fMRI might not reveal 
 significant sex differences, the complex interplay of these processes - as engaged during movie watching - could 
-highlight more pronounced differences between women and men. This underscores the value of using naturalistic stimuli 
-to uncover subtle but meaningful variations in neural processing that might be missed in more controlled, simplified 
-experimental paradigms. Using careful annotations of the movies, it is also possible to identify which features 
-of a given scene are particularly relevant to evoking sex differences in complex experiences and to identify 
-brain networks that differ most between females and males during these experiences.\\
-We aim to employ novel methodology utilizing NV paradigms to expand our understanding of sex differences in the 
-brain. This approach has the potential to elucidate sex-specific neural mechanisms in response to the complex and 
-dynamic content of movies and to reveal nuanced sex-specific distinctions in brain function that may not be apparent 
-in more constrained experimental paradigms or everyday observations. Our methodology leverages the ecological 
-validity of movie stimuli to probe complex, multimodal cognitive processes in a controlled yet naturalistic setting. 
-Through advanced neuroimaging techniques and sophisticated data analysis methods, we anticipate uncovering 
-subtle yet significant sex-based variations in neural activity and FC that can inform our understanding of 
-broader cognitive and behavioral differences between females and males. To this aim, we will first consider 
-temporally aggregated FC evoked by movies over the duration of several minutes. Subsequently, we will further 
-disentangle which specific events evoke sex differences and examine differences in the brain networks caused by 
-such events. Furthermore, we will examine how the brain’s response to the evolving narrative of the movies differs 
-between the sexes. The project's comprehensive approach of examining temporally aggregated as well as time resolved FC, 
-network dynamics and brain activity patterns provides a multi-faceted view of sex differences in the brain and, 
-which can have implications for understanding sex differences in cognition, behavior, and susceptibility to certain 
-neurological and psychiatric conditions.\\
-Results from the proposed project have the potential to add a crucial new dimension to current knowledge on 
-cognitive sex differences. Psychologically, these insights deepen our understanding of normative sex differences; 
-clinically, they may help clarify why certain psychiatric and neurological disorders manifest differently in women 
-and men. Such knowledge can potentially enhance diagnostic accuracy, inform personalized treatments, and support the 
-development of sex-specific healthcare and education strategies.\\
-Throughout the proposal, for ease of reading, the term “sex” will refer to the self-reported (biological) sex and 
-appearance of the participants. At the same time, we fully acknowledge that “gender identity”, i.e. the 
+highlight more pronounced differences between women and men. 
+Careful stimulus annotation will further allow us to identify the specific features and networks driving these differences.\\
+Using advanced neuroimaging and analysis methods, we aim to detect subtle but meaningful sex-related differences 
+in brain activity and FC, that can inform our understanding of 
+broader cognitive and behavioral differences between females and males. 
+First, we will study FC patterns that emerge over several minutes of movie watching. Then, we will zoom in to
+identify specific events that trigger differences between women and men, and examine how these differences 
+unfold in brain networks over time.\\
+This multi-layered approach — combining aggregated and time-resolved FC, network dynamics, and brain activity — offers 
+a richer view of sex differences in the brain function. 
+Results from the proposed project can shed new light on why cognitive and behavioral patterns differ 
+between women and men, and why certain neurological and psychiatric disorders present differently across the sexes. 
+Such knowledge may improve diagnostic precision and personalized treatments, and support sex-specific 
+strategies in healthcare and education.\\
+We are uniquely positioned to realize this project, as our lab has already acquired the Ju-MOVIES dataset, 
+a rich NV fMRI resource with over 130 participants. It combines extended movie stimuli, 
+hormone measures, and detailed scene annotations, providing an unparalleled foundation for 
+uncovering sex differences in the brain.\\
+For clarity, throughout this proposal “sex” refers to self-reported biological sex. 
+We acknowledge that “gender identity”, i.e. the 
 subjective identification of an individual as female, male, or one of the other gender identities which might 
-be also fluid, also play important roles, which however, are beyond the scope of the present project. 
+be also fluid, also plays a significant role, but this lies 
+beyond the scope of the present project.
 
 \subsection*{Data: The Ju-MOVIES dataset}
-The work proposed here will be based on a data set that has already been acquired and is ideally suited for 
-the examination of sex differences through a NV approach. Over the course of the project, further data will be collected.
-The paradigm comprises seven movie clips of about 8 - 10 minutes length, which are all excerpts from Hollywood movies 
-(“Dirty Dancing”, “Scream”, “Dead Poets Society”, “Forrest Gump”, “Dead Man Walking”, “Life is Beautiful”, 
-“The Good, the Bad, the Ugly”). The specific movie stimuli were chosen to cover a variety of social interactions 
-and complex situations as well as multifaceted emotions evolving over the course of the movie to match 
-the complex nature of real-life experiences. Considering that viewers lack the context of the entire movie, 
-each stimulus was chosen to be long enough for the viewers to understand the situation, empathize with characters and 
-follow the evolving narrative. Additionally, participants watch a compilation of 12 short movie clips (“Short Sequences”),
-which were again taken from Hollywood movies and completed two RS scans of about 9 minutes length with their eyes open. \\
-So far, we collected data of 135 healthy participants (68 males, age 18 - 35 years, mean age = 24.33 years). 
-All fMRI data are acquired on a Siemens 3T Prisma scanning (Siemens, Erlangen, Germany) with a 64-channel head coil 
-at the Imaging Core Facility of Research Centre Jülich, using a T2w multiband echo planar imaging sequence with the 
+The proposed work builds on the Ju-MOVIES dataset, which has already been acquired and is 
+uniquely suited for investigating sex differences with a NV approach. Its richness and design make it an ideal foundation for the present project. 
+Over the course of the project, further data will be collected.
+The paradigm comprises seven Hollywood movie excerpts (8 - 10 minutes each) selected to capture diverse social 
+interactions, complex situations, and evolving emotions (“Dirty Dancing”, “Scream”, “Dead Poets Society”, “Forrest Gump”, “Dead Man Walking”, “Life is Beautiful”, 
+“The Good, the Bad, the Ugly”), as well as 12 shorter clips and two RS scans of about 9 minutes. \\
+Stimuli were chosen to be long enough for participants to grasp the context and empathize with characters, 
+ensuring ecological validity.\\
+So far, data from 135 healthy participants (68 males, 18 - 35 years) have been collected on a 3T Siemens Prisma scanner
+with a 64-channel head coil, using a T2w multiband echo planar imaging sequence with the 
 following parameters: repetition time (TR) = 980ms, echo time (TE) = 30ms, flip angle = 70°, field of view 
 (FOV) = 207 x 207mm, voxel size=2.2 x 2.2 x 2.0mm3, number of slices: 64, multiband acceleration factor=4, 
 phase encoding direction=AP,  FoV=207mm). A mirror fixed on the head coil allows participants to see a screen used 
 to display the movies. In-ear headphones are used for ear protection and to deliver the movie sound. 
 Additionally, a structural T1w image is acquired using an MP-RAGE sequence (TR=2000ms, TE=2.45ms, TI=900ms, 
 flip angle=8°, FoV: 256mm) yielding 1mm3 voxels.\\
-Saliva samples are collected from each participant and levels of cortisol, oestradiol, progesterone, and testosterone 
-are analyzed by a specialized laboratory. Control for fluctuating hormone levels is essential for a meaningfully 
-interpretation of potential sex differences in functional brain. Furthermore, data OC intake is noted for 
-female participants. To characterize the movie stimuli in more detail, emotions perceived by viewers of the movies were assessed by 
-44 German participants (23 males, age 20-30 years, mean age 25.05 years) who watched all movie stimuli 
-while simultaneously rating six basic emotions 
+Alongside fMRI and structural imaging, saliva samples were collected and analyzed for levels of 
+cortisol, estradiol, progesterone, and testosterone to account for hormone-related variability. 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
   \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
   \includegraphics[width=\linewidth]{emotions_DMW_edited.png}
   \caption{Exemplary emotion annotation for one of the movie stimuli..}
   \label{fig:dmw}
-\end{wrapfigure}
-(happiness, fear, surprise, sadness, disgust and anger \parencite{ekmanConstantsCulturesFace1971a}). 
-Rating were collected by the ReMoTa toolbox (Real-time Movie Tagging v0.0; \parencite{lettieriEmotionotopyHumanRight2019a}). 
-Participants watched the movies on a laptop and rated their feelings by use of the keyboard. 
-All emotions were rated simultaneously on a scale from 0 to 100 at a sampling rate of 10hz. 
-The emotion ratings confirmed the multifaceted and diverse emotions elicited by the 
-different movie stimuli. In a further annotation, two independent raters quantified the following 
-features: faces, bodies, male / female presenting characters, ethnicity of characters, presence of children, 
+\end{wrapfigure}Oral contraceptive use was documented in women.
+The movies are richly annotated: 
+emotion ratings from 44 additional participants (23 males, age 20-30 years)
+for the six basic emotions (happiness, fear, surprise, sadness, disgust and anger \parencite{ekmanConstantsCulturesFace1971a}), 
+sampled at 10 Hz confirmed that the stimuli evoke a wide spectrum of affective states. 
+Further annotations by two indpendent raters include scene content: faces, bodies, male / female presenting characters, ethnicity of characters, presence of children, 
 adults, crowds, hands, buildings, vehicles, food, landscapes, animals, plants, movement, social interactions, 
 place (inside or outside / urban vs. non-urban), time of day (day or night), weather, presence of music and 
-camera movements.
+camera movements, enabling fine-grained mapping of movie features to neural responses.
+Altogether, Ju-MOVIES offers a rare combination of naturalistic stimulation, hormone measures, 
+and detailed scene-level annotations, providing an exceptionally strong basis for the proposed project.
+
 
 \subsection*{Work Program and Research Methods}
-The overarching goal of the proposed project is to complement existing research on sex differences by employing a 
-NV approach. This method promises new insights into sex differences in the brain response to complex and 
-dynamically evolving situations akin to what the brain has to deal with in real life. 
-Results can go beyond existing studies based on both TB or RS approaches and promise novel insights that 
-could so far not be achieved with existing research approaches. Specifically, we will examine which types 
-of complex situations as depicted in the movie stimuli result in most pronounced sex differences. 
-In the next steps, we will further disentangle which events within the movies' narrative drive these sex 
-differences and examine how females’ and males’ brains respond differentially to the evolving narrative of the movies. 
-We expect this novel approach to the study of cognitive sex differences together with the project's comprehensive 
-approach of examining temporally aggregated FC, event-related responses, network dynamics and brain 
-activity as well as hormone related variability to provide important new insights into the 
-multi-faceted spectrum of sex differences of the brain in action.\\ 
-Firstly, in work package (WP) 1 we aim to go beyond existing results on sex differences in the RS 
-by examining sustained FC over the course of a variety of movies of several minutes length. Using a temporally 
-aggregated FC approach as commonly used for RS data, results of this WP will identify sex differences in 
-“action brain states” and their underlying brain networks.\\ 
-In WP 2, we will then employ a time resolved FC approach to identify temporally specific events driving sex 
-differences in the experience of complex situations. This approach makes use of the know dynamics and content 
-of the movies. Detailed annotations of the movie content will be used to characterize the type of situations 
-that drive sex differences together with revealing sex specific cognitive strategies when encountering such situations.\\ 
-In WP3, rather than looking at temporally aggregated or time resolved FC patterns we will examine the brain 
-activation invoked by the movies. In particular, we will extract (within each brain region) typical 
-female and male brain responses to the dynamically evolving movie content. This approach complements 
-results from WP1 and WP2 through an understanding of how females' and males' brains respond differentially 
-to the evolving narrative of the movies. 
+The overarching goal of the proposed project is to complement existing research on sex differences in the brain by 
+employing a NVapproach. This method promises new insights into sex differences in brain responses to complex, 
+dynamically evolving situations—much closer to the demands the brain faces in real life. Our results can go beyond 
+findings from both TB and RS studies and provide perspectives that previous approaches could not achieve. 
+Specifically, we will identify which types of complex situations depicted in the movie stimuli give rise to the 
+most pronounced sex differences. In subsequent steps, we will disentangle which narrative events within the 
+movies drive these differences and examine how female and male brains respond differentially to the evolving storyline. 
+We expect that this innovative approach, combining analyses of temporally aggregated 
+FC, event-related responses, network dynamics and brain activity will yield important new insights into 
+the multi-faceted spectrum of sex differences in the brain in action.\\
+\textbf{WP1}will extend existing RS findings by examining sustained FC during NV across time periods of several 
+minutes. Using a temporally aggregated FC approach, as commonly applied to RS data, this work will identify 
+sex differences in “action brain states” and their underlying networks.\\
+\textbf{WP2} will build on this by employing a time-resolved FC approach to detect temporally specific events 
+that drive sex differences in the experience of complex situations. Leveraging detailed annotations of the 
+movie content, we will characterize which types of situations give rise to pronounced sex differences and 
+reveal sex-specific cognitive strategies in processing them.\\
+\textbf{WP3} will focus on brain activation patterns rather than FC. Here, we will extract typical female 
+and male brain responses within each brain region to the dynamically evolving movie content. This analysis will 
+complement WP1 and WP2 by providing a direct account of how women's and men's brains differentially respond 
+to unfolding narrative events.
 
 \subsection*{WP 1: The Brain in Action - The Naturalistic Viewing Action State (NV-AS) }
 Several studies have shown that sex classification based on RS FC can achieve high classification accuracies 
