@@ -140,14 +140,14 @@ with a recent study from our lab \parencite{krollNaturalisticViewingIncreases202
 FC patterns that are unique at the individual level.\\ 
 Our lab pioneered NV analysis methods. We recently developed the topography-based predictive framework 
 (TOPF) \parencite{liTopographybasedPredictiveFramework2023a}, which identifies individual-specific evoked activity topographies in a data-driven 
-manner and examines their behavioural relevance using a ML predictive framework. 
+manner and examines their behavioral relevance using a ML predictive framework. 
 TOPF effectively and stably captures individual differences in evoked brain activity and successfully predicts phenotypes across 
 cognition, emotion and personality, and will be employed in the present context to uncover differences between 
 females and males. In preliminary work using TOPF \parencite{liTopographybasedPredictiveFramework2023a} on NV data, we 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
   \vspace{-10pt} % optional: kleine Korrektur, damit es bündig startet
   \includegraphics[width=\linewidth]{topf_neu.png}
-  \caption{TOPF captures individual differ-ences in brain activity and successfully predicts phenotypes across cognition, emotion and personality.}
+  \caption{TOPF captures individual differences in brain activity and successfully predicts phenotypes across cognition, emotion and personality.}
   \label{fig:topf}
 \end{wrapfigure}
 achieved up to 80\% accuracy in sex classification on single movie clips. Highly predictive regions were 
@@ -177,7 +177,7 @@ in more constrained experimental paradigms or everyday observations. Our methodo
 validity of movie stimuli to probe complex, multimodal cognitive processes in a controlled yet naturalistic setting. 
 Through advanced neuroimaging techniques and sophisticated data analysis methods, we anticipate uncovering 
 subtle yet significant sex-based variations in neural activity and FC that can inform our understanding of 
-broader cognitive and behavioural differences between females and males. To this aim, we will first consider 
+broader cognitive and behavioral differences between females and males. To this aim, we will first consider 
 temporally aggregated FC evoked by movies over the duration of several minutes. Subsequently, we will further 
 disentangle which specific events evoke sex differences and examine differences in the brain networks caused by 
 such events. Furthermore, we will examine how the brain’s response to the evolving narrative of the movies differs 
@@ -216,7 +216,7 @@ to display the movies. In-ear headphones are used for ear protection and to deli
 Additionally, a structural T1w image is acquired using an MP-RAGE sequence (TR=2000ms, TE=2.45ms, TI=900ms, 
 flip angle=8°, FoV: 256mm) yielding 1mm3 voxels.\\
 Saliva samples are collected from each participant and levels of cortisol, oestradiol, progesterone, and testosterone 
-are analysed by a specialized laboratory. Control for fluctuating hormone levels is essential for a meaningfully 
+are analyzed by a specialized laboratory. Control for fluctuating hormone levels is essential for a meaningfully 
 interpretation of potential sex differences in functional brain. Furthermore, data OC intake is noted for 
 female participants. To characterize the movie stimuli in more detail, emotions perceived by viewers of the movies were assessed by 
 44 German participants (23 males, age 20-30 years, mean age 25.05 years) who watched all movie stimuli 
@@ -276,7 +276,7 @@ aggregated FC patterns induced by the complex narratives presented in the movies
 we expect movie induced brain patterns to represent states that are strongly dependent on the content of the movies. 
 As this content is known, it can be used to characterize evoked FC patterns and sex differences between them. 
 Thus, in this WP we will consider sustained brain “action states” (ASs) evoked by different movies and 
-ompare sex classification accuracies based on different naturalistic viewing ASs (NV-ASs) to RS. 
+compare sex classification accuracies based on different naturalistic viewing ASs (NV-ASs) to RS. 
 Since sex differences in NV-ASs depend on movie content, annotations the content will be employed to 
 characterize the evoked brain NS-ASs and sex differences between them. 
 Thus, this WP will provide insights 
@@ -314,29 +314,101 @@ based on NV-AS to outperform RS, as similar effects have been observed for other
 \parencite{finnCanBrainState2017a,vanderwalIndividualDifferencesFunctional2017} and NV has been shown to increases individual 
 identifiability over RS \parencite{krollNaturalisticViewingIncreases2023}. 
 
-**** bis hier
-
 \subsubsection*{WP 1.2: Which movie features drive sex classification accuracies?}
 To further examine which kinds of complex situations maximize sex differences in the brain, we will characterize each movie 
-clip by several visual and auditory features across the duration of the movie clips. These will comprise low-level features like mean 
-motion energy, visual brightness and auditory loudness, high-level features like number of faces, social interactions and words, 
-which can be automatically extracted (Mcnamara, et al. 2017; Radford, et al. 2023), 
-and further movie features that have been acquired in Ju-MOVIE-An. We will then compare sex classification accuracies 
-across the whole brain between the eight different movies clips by use of a multiple regression approach, which will 
-delineate which movie features drive classification performance for each brain parcel. 
+clip by several visual and auditory features across the duration of the movie clips. These will comprise 
+low-level features like mean motion energy, visual brightness and auditory loudness, high-level features 
+like number of faces, social interactions and words, 
+which can be automatically extracted \parencite{mcnamaraDevelopingComprehensiveFramework2017a,radfordRobustSpeechRecognition2022}, 
+and further movie features that have been acquired in our annotations. We will then compare sex classification 
+accuracies across the whole brain between the eight different movies clips by use of a multiple regression approach, 
+which will delineate which movie features drive classification performance for each brain parcel. 
 As higher classification performance indicates more pronounced differences between the sexes, this procedure will 
 result in a “movie feature profile” explaining which features of the movies result in most pronounced sex differences. 
 By clustering brain parcels according to their movie feature profiles, we will identify brain networks in which sex 
 differences are conjointly driven by specific features of the movies. We hypothesize that certain brain 
 networks will comprise specific cognitive domains, in particular those that have been identified in 
-classical group studies, which identified sex differences in cognitive domains like language and spatial cognition (Halpern 2000; Kimura 2000). Other networks can be expected to comprise more generalized and non-specific cognitive resources which are independent of the specific situation (Hugdahl, et al. 2015). We expect domain-specific brain networks to overall achieve higher sex classification accuracies than domain-general networks.
-In an exploratory approach, we will compare the expressions of these networks in females and males by 
-computing the first principal component of network FC patterns in females and males separately, 
-thus identifying the “typical” female and male brain network pattern for each movie feature cluster. An exploration of these sex specific movie feature networks should help elucidate sex specific cognitive strategies in response to complex life-like situations. 
-Main Goal: Characterize sex differences in the NV-AS to reveal situationally modulated sex differences 
-that may not be evident in RS.
-Open Question: Will sex specific movie feature networks differ systematically, 
-and what do these differences suggest about sex-specific cognitive strategies?
+classical group studies, which identified sex differences in cognitive domains like language and spatial 
+cognition \parencite{halpernSexDifferencesCognitive2000a,kimuraSexCognition2000a}. 
+Other networks can be expected to comprise more generalized and 
+non-specific cognitive resources which are independent of the specific situation \parencite{hugdahlExistenceGeneralizedNonspecific2015a}. 
+We expect domain-specific brain networks to overall achieve higher sex classification accuracies than 
+domain-general networks. In an exploratory approach, we will compare the expressions of these networks 
+in females and males by computing the first principal component of network FC patterns in females and males separately, 
+thus identifying the “typical” female and male brain network pattern for each movie feature cluster. 
+An exploration of these sex specific movie feature networks should help elucidate sex specific 
+cognitive strategies in response to complex life-like situations.\\ 
+\textbf{Main Goal: Characterize sex differences in the NV-AS to reveal situationally modulated sex differences 
+that may not be evident in RS.}\\
+\textbf{Open Question: Will sex specific movie feature networks differ systematically, 
+and what do these differences suggest about sex-specific cognitive strategies?}
+
+\subsection*{WP 2: Going dynamic: Sex differences in time-resolved FC}
+WP 1 will provide insights into sex differences in the overall NV-AS induced by different movies, thus
+identifying sex differences in brain networks evoked over the temporally aggregated state of perceiving a
+complex situation. However, one of the main advantages of using movies in the study of individual
+differences is that their content varies dynamically and that due to the shared stimulus experienced by all
+participants the impact of the dynamic movie content on the brain can be directly analyzed. Making use
+of this, the present WP will further disentangle the temporally aggregated FC pattern of the NV-AS into
+time resolved FC patterns at each time point of the movie. Going beyond characterizing “state type” movie
+content as a whole, here the main aim is to directly identify specific events within the movies that result in
+distinct time-point specific FC patterns that differ between females and males. These, in turn, can be further
+analyzed through the use of temporally resolved rather than movie wide annotations.\\
+To achieve this goal, we will again parcellate the fMRI data and compute a mean activation time course for
+each parcel. Instead of considering the NV-AS, we will now decompose static FC patterns into moment-by-
+moment, single repetition time (TR) co-fluctuation patterns \parencite{betzelLivingEdgeNetwork2023a,faskowitzEdgecentricFunctionalNetwork2020a}.
+Basically, the Pearson correlation which is above used as a measure of temporally aggregated FC between
+pairs of brain regions is “temporally unwrapped” by calculating the element-wise product of each pair of
+nodes' z-scored time series. For each edge, i.e. connection between two brain parcels, this results in a time
+series - typically referred to as "edge time series" (eTS) - representing the instantaneous co-fluctuation
+magnitude between the pairs, or simply speaking, the development of FC over time \parencite{betzelLivingEdgeNetwork2023a}.
+To identify dynamic FC differences between females and males during movie watching, we will identify
+time points within the movies, at which females' and malesÄ FC patterns are most distinct. To do so, we
+will employ a ML approach at each time point to classify sex based on the individual time resolved FC
+patterns. Given that the dimensionality of these features, i.e. the number of edges, is extremely high, we
+will first employ a principal component analysis (PCA) for dimensionality reduction. Then, for each time
+point, the first n (e.g. 50) principal components will be used as features to train a sex classifier for which
+classification accuracy will be determined by use of a CV approach. Again, hormone levels and OC status
+will be included in the models as confounds to control for hormone related variability and possible confound
+leakage will be assessed and controlled for \parencite{hamdanConfoundleakageConfoundRemoval2022a}.\\
+Using permutation tests we will identify those time points, for which classification accuracy differs
+significantly (p < 0.05) from chance, thus identifying events within each movie for which female and male
+time-resolved FC differs most. This approach offers the unique opportunity to link temporally specific sex
+differences in FC to movie content, thus identifying specific situations to which the sexes react differently.
+To characterize these situations, annotations of the movies will be used to identify movie events driving
+sex differences in time specific FC together with sex specific FC patterns driven by these features. To this
+aim, for each of the significantly different time points, the presence or absence of specific movie features
+(e.g. human bodies, faces, animals, scene cuts) will be coded binary, while continuous features (like
+luminance and audio level) will be coded as continuous numbers, thus creating a movie feature vector for
+each significant time point. We assume that typical sex differences in time resolved FC patterns will repeat
+across similar types of scenes in the different movies. Therefore, we will cluster the time points inducing
+significant differences between females and males according to their feature vectors, thus revealing parts
+of the movies that evoke sex difference during scenes with similar content. Then, for each of the time point
+clusters, we will compute a typical female and male FC pattern as the first component of a PCA across the
+FC patterns assigned to this cluster. This will identify typical female and male FC patterns in response to
+movies content associated with this cluster of movie scenes.\\
+Finally, we will identify the pattern of brain regions that are most strongly involved in the typical female
+and male FC patterns for each cluster. Firstly, we will threshold the typical female and male FC patterns to
+identify most important edges in the sex-specific networks. Then, for each brain region, we will compute
+the weighted sum of all edges connected to that region and identify most important network nodes by
+selecting those for which summed FC strength exceeds the mean + 2 standard deviations across all nodes.
+This procedure will identify the sex specific spatial distribution of brain networks evoked by specific scenes
+in the movies.\\
+Altogether, this procedure will shed light on which features within the movies induce most pronounced
+differences between females and males. Together with a set of features describing the movie scenes, we
+will identify female and male typical brain networks responding to these situations. While we expect to
+identify cognitive domains that match those identified in classical TB studies, the present approach will not
+only identify differences in specific isolated cognitive domains but reveal sex differences in cognitive
+strategies of dealing with certain complex situations. For example, while TB studies have identified sex
+differences in specific brain regions (like the fusiform face area) when participants viewed pictures of faces
+presented in isolation, our approach will depict sex differences in the brain when faces are encountered in
+a multimodal situation like in real life. Consideration of the brain networks evoked differently in females
+and males will shed light on sex specific neuronal patterns in perceiving faces.\\
+\textbf{Main Goal: Identify temporally specific movie events driving sex differences in the experience of real life-
+like stimuli and related differences in time-resolved FC patterns.}\\
+\textbf{Open Question - Relation to Classical Findings: How do naturalistic sex differences observed here relate
+to findings from traditional TB paradigms (e.g., isolated face viewing)? Are the same brain regions
+implicated, or do new networks emerge under ecologically valid conditions?}
 
 
 
