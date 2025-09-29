@@ -1,4 +1,3 @@
-
 \documentclass[11pt,a4paper]{article}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}
@@ -6,47 +5,31 @@
 \usepackage[english]{babel}
 \usepackage{setspace}
 \usepackage{parskip}
-\usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage{enumitem} % <--- needed for aligned description lists
+\usepackage{hyperref} % for clickable email
 \usepackage{mathptmx} 
 \usepackage{csquotes}
-%\usepackage[backend=biber,style=apa]{biblatex}
 \usepackage[backend=biber,style=numeric]{biblatex}
-\renewcommand*{\bibfont}{\small}  % Schriftgröße der Referenzen
-\usepackage{soul} % us hl to highlight
-\usepackage{xcolor} % Optional, falls du die Farbe ändern willst
-\usepackage[most]{tcolorbox}  % in der Präambel
 \usepackage{titlesec}
-\usepackage{changepage}
-\usepackage{comment}
 \usepackage{tabularx}
 \usepackage[table]{xcolor} % Optional: für dezente Hintergrundfarben
 \usepackage{booktabs}      % Für schönere Tabellenlinien
 \usepackage{longtable}
-\usepackage{array}
-\usepackage[table]{xcolor}
 \usepackage{graphicx}   % wichtig fürs Einfügen von Bildern
 \usepackage{caption}    % erlaubt auch unnummerierte Captions (optional)
 \usepackage{wrapfig}   % Text um Bilder herum
+\usepackage{calc}
 \captionsetup[figure]{name=Fig.}
 \captionsetup[figure]{aboveskip=1pt, belowskip=-2ex}
-\captionsetup[figure]{font={scriptsize,it}}
-
-\usepackage{enumitem}   % <--- needed for aligned description lists
-\usepackage{hyperref}   % for clickable email
-\usepackage{calc}
-
-% Vor der Tabelle:
+\captionsetup[figure]{font={scriptsize,it}} 
+\renewcommand*{\bibfont}{\small}  % Schriftgröße der Referenzen
 \renewcommand{\arraystretch}{1.2}
 \rowcolors{2}{gray!10}{white}
-
 \titlespacing*{\section}{0pt}{0.8ex plus 0.5ex minus .2ex}{0.3ex}
 \titlespacing*{\subsection}{0pt}{0.8ex plus 0.5ex minus .2ex}{0.3ex}
 \titlespacing*{\subsubsection}{0pt}{0.8ex plus 0.5ex minus .2ex}{0.3ex}
 \titleformat{\paragraph}[block]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}{0pt}{0.5ex plus 0.2ex minus 0.1ex}{1ex}
-
-\sethlcolor{yellow} % Setzt die Highlight-Farbe
 \setlist[itemize]{leftmargin=*, topsep=-3pt, itemsep=0pt}
 \setstretch{1}
 
@@ -67,8 +50,8 @@ Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University D�
 Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7), Research Centre Jülich, Jülich, Germany and \\
 Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf, Germany. 
 
-\textbf{Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7)}, Research Centre Jülich, 
-Jülich, Germany: \\
+\textbf{Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7) Research Centre Jülich, 
+Jülich, Germany}\\
 The proposed work is embedded in a multidisciplinary working team combining knowledge in the field of neuropsychology, structural and functional MRI analysis, 
 computational neuroscience and machine learning. 
 
@@ -82,25 +65,25 @@ computational neuroscience and machine learning.
 \subsection*{Background and Research Question} 
 
 Functional brain imaging, especially fMRI, has been widely used to investigate sex differences in the brain. 
-Such differences in structural and functional brain organization are crucial for understanding healthy development, 
-aging, and the manifestation of psychiatric and neurological disorders \parencite{cahillWhySexMatters2006,gobinathSexHormonesGenotype2017}. 
-Thus, a deeper understanding of sex differences in the brain and their underlying mechanisms is essential 
-for understanding both healthy behavior and psychopathology.\\
-In this proposal, we employ novel brain imaging methodology utilizing naturalistic viewing (NV), i.e. watching movie 
-clips in the scanner, to gain new perspectives on sex differences in brain function. While it is common knowledge 
+Understanding sex differences in brain function is not only of fundamental scientific interest but also of high societal importance. 
+Women and men differ in the prevalence, course, and treatment response of many psychiatric and neurological disorders \parencite{cahillWhySexMatters2006,gobinathSexHormonesGenotype2017}, 
+yet current diagnostic and therapeutic strategies rarely account for these differences. By uncovering sex-specific neural mechanisms 
+in ecologically valid contexts, this project has the potential to improve diagnostic precision, inform personalized treatments, 
+and guide the development of sex-sensitive strategies in medicine, education, and mental health. 
+In this way, the proposed work directly addresses the call's emphasis on both scientific originality and societal relevance.\\
+We suggest novel brain imaging methodology utilizing naturalistic viewing (NV), i.e. watching movie 
+clips in the scanner, for providing new perspectives on sex differences in brain function. While it is common knowledge 
 that women and men often react differently to films, our study moves beyond stereotypes (“women prefer emotions, 
 men prefer action”) to examine in detail how brain activity and functional connectivity (FC) differ when 
 viewing diverse scenes. For example, women may process subtle social cues in dialogue in more depth, whereas 
 men may respond more strongly to visual foreshadowing of danger. Through the novel use of NV fMRI, we aim to uncover 
 sex-specific neural mechanisms that have remained invisible to traditional approaches, advancing the field far beyond 
 the current state of research.\\
-Classical studies used task-based (TB) fMRI, yielding domain-specific insights on cognitive sex differences. 
-\parencite{thimmMenstrualCycleEffects2014a,weisDynamicChangesFunctional2011,weisEstradiolModulatesFunctional2008}. 
-However, due to the highly artificial nature of the tasks, ecological validity of task-related fMRI is usually 
-very low and does not reflect cognitive sex differences as observed in daily life.
-More recently, resting-state (RS) fMRI has been applied, in which fMRI data is acquired while subjects relax 
-in the scanner without any specific task demand or visual or auditory stimulation.
-Earlier RS studies examined group differences in FC patterns between women and men. 
+Classical studies used task-based (TB) fMRI, which provided domain-specific insights into cognitive sex differences 
+\parencite{thimmMenstrualCycleEffects2014a,weisDynamicChangesFunctional2011,weisEstradiolModulatesFunctional2008}, 
+but with very low ecological validity. More recently, resting-state (RS) fMRI has become the method of choice
+for studying sex differences, where data are acquired while subjects relax in the scanner without any specific task 
+demand or sensory stimulation. Earlier RS studies examined group differences in FC patterns between women and men. 
 More recently, machine learning (ML) methods have been applied to move beyond group averages: 
 sex classification approaches use RS data to predict the sex of individual subjects 
 \begin{wrapfigure}{r}{0.3\textwidth} % r = rechts, l = links
@@ -122,16 +105,16 @@ Importantly, as opposed to RS, all participants are exposed to the same stimulus
 for which content and timing 
 is known and can be used in the analyses.
 \par\vspace{-\parskip}\noindent % small, controlled separation
-Such approaches offer complex, dynamic, and ongoing stimulation similar to experiences in everyday life, 
+NV offers complex, dynamic, and ongoing stimulation similar to experiences in everyday life, 
 where low-level (audiovisual) and high-level (cognitive and emotional) content vary fluidly, 
 creating a multimodal immersive experience \parencite{sonkusareNaturalisticStimuliNeuroscience2019}. 
 This provides the opportunity to capture dynamic neural processing in ecologically valid contexts 
 \parencite{vanderwalMoviesMagnetNaturalistic2019} and has been shown to enhance reliability and identifiability 
 over RS \parencite{krollNaturalisticViewingIncreases2023}.\\
-Our lab has pioneered NV analyses. We developed the "Topography-based Predictive Framework" (TOPF) 
+Our lab has pioneered NV analyses. We developed the \textbf{"Topography-based Predictive Framework" (TOPF)}
 \parencite{liTopographybasedPredictiveFramework2023a}, which extracts individual-specific evoked 
 topographies and links them to behavior using ML.
-TOPF achieved up to 80\% accuracy in sex classification \parencite{liStimulusSelectionInfluences2025a}, 
+TOPF achieves up to 80\% accuracy in sex classification \parencite{liStimulusSelectionInfluences2025a}, 
 with predictive regions tied to emotion, language, and higher cognition. 
 These promising results highlight the potential of NV to uncover novel sex differences.\\
 Surprisingly, to our knowledge, no study has yet used NV to systematically examine sex differences. 
@@ -141,11 +124,8 @@ i.e. to potentially provide a standardized way to study the whole organ while it
 across different levels of intensity and demands. 
 We therefore expect NV to expose sex differences across a wide range of real-life-like situations — social interactions, 
 face and emotion perception \parencite{sonkusareNaturalisticStimuliNeuroscience2019}, 
-or complex narratives - that TB or RS approaches cannot capture. 
-While isolated cognitive processes as examined in TB fMRI might not reveal 
-significant sex differences, the complex interplay of these processes - as engaged during movie watching - could 
-highlight more pronounced differences between women and men. 
-Careful stimulus annotation will further allow us to identify the specific features and networks driving these differences.
+or complex narratives - that RS approaches cannot capture. Careful stimulus annotation will further allow us to identify the 
+specific features and networks driving these differences.
 Using advanced neuroimaging and analysis methods, we aim to detect subtle but meaningful sex-related differences 
 in brain activity and FC, that can inform our understanding of 
 broader cognitive and behavioral differences between females and males.
@@ -420,7 +400,7 @@ strategies in medicine, education, and mental health.
 \toprule
 \endfirsthead
 \endhead
-Costs for personnel (1 Doctoral Researcher (65\%) for 33 months \\ 33 * 6.800 * 0.65) & 145.860 Euro \\
+Costs for personnel (1 Doctoral Researcher (65\%) for 33 months \\ 0.65 * 33 months * 6.800 (DFG rate) & 145.860 Euro \\
 \bottomrule
 \end{longtable}
 
