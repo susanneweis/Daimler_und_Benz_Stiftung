@@ -32,6 +32,10 @@
 \captionsetup[figure]{aboveskip=1pt, belowskip=-2ex}
 \captionsetup[figure]{font={scriptsize,it}}
 
+\usepackage{enumitem}   % <--- needed for aligned description lists
+\usepackage{hyperref}   % for clickable email
+\usepackage{calc}
+
 % Vor der Tabelle:
 \renewcommand{\arraystretch}{1.2}
 \rowcolors{2}{gray!10}{white}
@@ -50,21 +54,23 @@
 
 \begin{document}
 
-\hl{Name, institution, and contact details of the applicant (one person only) and a list of the scientists or institutions involved in the research project (max. 2 A4 pages)
-CVs and lists of publications need not be submitted.}
+\subsection*{Applicant} 
+\vspace{1ex}
+\textbf{PD Dr. Susanne Weis}\\
+Group Leader "Brain Variability", Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7), Research Centre Jülich, Jülich, Germany and \\
+Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf, Germany. \\
+\textbf{Contact Details:} eMail: S.Weis@fz-juelich.de, phone: +49 2461 61 85925\\
 
-PD Dr. rer. medic. Susanne Weis, Heinrich Heine University Düsseldorf; \\
-Gruppenleiterin „Variabilität des Gehirns“, Gehirn und Verhalten (INM-7), Institut für Neurowissenschaften und Medizin,  
-Forschungszentrum Jülich; \\
-E-Mail: S.Weis@fz-juelich.de
+\subsection*{Scientists and Institutions involved in the research project}
+\vspace{1ex}
+\textbf{Prof. Dr. Simon Eickhoff}\\
+Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7), Research Centre Jülich, Jülich, Germany and \\
+Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf, Düsseldorf, Germany. 
 
-Simon
-
-INM-7: The proposed work is embedded in a multidisciplinary working team combining knowledge in the field of neuropsychology, structural and functional MRI analysis, computational neuroscience and machine learning. 
-
-Dr. Kaustubh Patil, head of the working group “Applied Machine Learning”
-
-Rick Betzel is an associate professor at the Psychological and Brain Sciences Department of Psychological and Brain Sciences at Indiana University Bloomington, USA. He is an expert in principles of time-varying functional network reconfiguration and its relationship to ongoing cognitive processes and one of the developers of the edge time series approach which we will employ within the project suggested here. 
+\textbf{Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7)}, Research Centre Jülich, 
+Jülich, Germany: \\
+The proposed work is embedded in a multidisciplinary working team combining knowledge in the field of neuropsychology, structural and functional MRI analysis, 
+computational neuroscience and machine learning. 
 
 
 \newpage
@@ -403,6 +409,26 @@ In doing so, we aim not only to advance basic neuroscience,
 but also to lay the groundwork for a future in which insights into sex-specific brain 
 function help shape more precise diagnostics, personalized treatments, and ultimately more equitable 
 strategies in medicine, education, and mental health.
+
+\newpage
+
+\subsection*{Requested Budget}
+
+\noindent\textbf{Total: 145.860 Euro}
+
+\begin{longtable}{p{12cm} p{\dimexpr\textwidth-12cm-2\tabcolsep}}
+\toprule
+\endfirsthead
+\endhead
+Costs for personnel (1 Doctoral Researcher (65\%) for 33 months \\ 33 * 6.800 * 0.65) & 145.860 Euro \\
+\bottomrule
+\end{longtable}
+
+In case of funding of the present proposal, the institute commits to covering the doctoral researcher's remaining three 
+months of salary to complete a full three-year position as well as the costs for ongoing fMRI scanning, 
+with a corresponding letter of intent attached.\\
+
+\newpage
 
 \printbibliography
 
